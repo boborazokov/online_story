@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper > div {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  background-color: red;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  align-content: space-around space-between space-evenly;
+  flex-wrap: wrap;
+}
+.wrapper > div:nth-child(3) {
+  order: 1;
+}
+.wrapper > div:nth-child(1) {
+  order: 2;
+}
